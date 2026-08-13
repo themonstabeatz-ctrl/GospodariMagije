@@ -1,0 +1,1 @@
+import { defineConfig } from "@lovable.dev/vite-tanstack-config"; export default defineConfig({ tanstackStart: { server: { entry: "server" }, }, vite: { server: { allowedHosts: [".trycloudflare.com"], port: 5173, strictPort: true, }, }, });
