@@ -37,3 +37,5 @@ dist-electron/
 
 cloudflared.exe
 dist-electron/
+
+.vercel

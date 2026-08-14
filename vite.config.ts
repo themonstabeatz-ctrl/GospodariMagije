@@ -11,8 +11,10 @@ export default defineConfig({
     // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
     // nitro/vite builds from this
     server: { entry: "server" },
-    // NOVO: podešeno za Vercel hosting umesto podrazumevanog Cloudflare cilja,
-    // tako da Vercel ispravno razdvaja statične fajlove od server rute.
-    target: "vercel",
+  },
+  // NOVO: Nitro-ov stvarni naziv opcije je "preset" (vidljivo u build logu: "preset: cloudflare-module"),
+  // menjamo podrazumevani Cloudflare cilj na Vercel da bi server deo bio kompatibilan sa Vercel hostingom.
+  nitro: {
+    preset: "vercel",
   },
 });
