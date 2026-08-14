@@ -15,6 +15,6 @@ export default defineConfig({
   // NOVO: Nitro-ov stvarni naziv opcije je "preset" (vidljivo u build logu: "preset: cloudflare-module"),
   // menjamo podrazumevani Cloudflare cilj na Vercel da bi server deo bio kompatibilan sa Vercel hostingom.
   nitro: {
-    preset: "vercel",
+    preset: "netlify",
   },
 });
